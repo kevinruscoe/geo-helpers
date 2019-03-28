@@ -7,21 +7,16 @@ use KevinRuscoe\GeoHelpers\Point;
 
 class PointTest extends TestCase
 {
-    private $point;
-
-    public function setUp()
-    {
-        $this->point = new Point(1, 2);
-    }
-
     public function test_it_can_return_lat_lng_array()
     {
+        $point = new Point(1, 2);
+
         $this->assertEquals(
             [
                 'lat' => 1.0,
                 'lng' => 2.0,
             ],
-            $this->point->toArray()
+            $point->toArray()
         );
     }
 
