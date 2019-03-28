@@ -110,7 +110,7 @@ class Point
 
         $this->setLatitude($unpacked['lat']);
         
-        $this->setLongatude($unpacked['lon']);
+        $this->setLongitude($unpacked['lon']);
 
         return $this;
     }
